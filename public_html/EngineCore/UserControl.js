@@ -3,7 +3,6 @@ const KEY_F = 70;
 const KEY_G = 71;
 
 function userControl (event){
-
     let keycode;
     let width = gEngine.Core.mWidth;
     let height = gEngine.Core.mHeight;
@@ -14,7 +13,6 @@ function userControl (event){
         keycode = event.which;
     }
 
-    
     if (keycode === KEY_F) {
         //f
         //create new Rectangle at random position

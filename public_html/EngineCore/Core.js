@@ -4,6 +4,8 @@ const WIDTH_CANVAS = 800;
 const HEIGHT_CANVAS = 450;
 // Variables
 var gEngine = gEngine || {};
+let mAllObjects = []; // to keep track of all defined rigid shapes.
+
 
 // gEngine is where all the physics engine core
 // functionality will reside.
@@ -17,6 +19,7 @@ gEngine.Core = ( function(){
     // To make some engine core variablesand functions accessible
     // by others scripts.
     let mPublic = {
+        mAllObjects : mAllObjects,
         mWidth : mWidth,
         mHeight : mHeight,
         mContext : mContext
