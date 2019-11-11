@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic JS 2D game engine</title>
 </head>
-<body>
+<body onkeydown="return userControl(event);">
     <canvas id="canvas"></canvas>
+    <script type="text/javascript" src="EngineCore/UserControl.js"></script>
     <script type="text/javascript" src="EngineCore/Core.js"></script>
 </body>
 </html>
